@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CORPS">
         <activity
+            android:name=".vue.WashActivity"
+            android:exported="true" />
+        <activity
+            android:name=".vue.DetailsActivity"
+            android:exported="true" />
+        <activity
             android:name=".vue.ChoiceActivity"
             android:exported="true" />
         <activity
