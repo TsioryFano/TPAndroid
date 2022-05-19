@@ -2,6 +2,7 @@ package com.example.corps.vue;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -43,14 +44,8 @@ public class MainActivity extends AppCompatActivity {
     private void ecouteValider (){
         ((ImageButton) findViewById(R.id.imgValider)).setOnClickListener(new ImageButton.OnClickListener(){
             public void onClick(View v){
-                //Toast.makeText(MainActivity.this, "test", Toast.LENGTH_SHORT).show();
-                String prenom = null;
-                Integer age = 0;
-                try {
-
-                    prenom = txtPrenom.getText().toString();
-                    age = Integer.parseInt(txtAge.getText().toString());
-                }catch (Exception e){ };
+                Intent intent = new Intent(MainActivity.this, ChoiceActivity.class);
+                startActivity(intent);
             }
         });
     }
