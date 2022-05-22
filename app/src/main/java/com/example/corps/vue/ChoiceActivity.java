@@ -16,7 +16,9 @@ public class ChoiceActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choice);
-        ecouteImgBtn((ImageButton) findViewById(R.id.imgValider), DetailsActivity.class);
+        ecouteImgBtn((ImageButton) findViewById(R.id.imgBtnAcceuil), MainActivity.class);
+        ecouteImgBtn((ImageButton) findViewById(R.id.imgBtnCorps), DetailsActivity.class);
+        ecouteImgBtn((ImageButton) findViewById(R.id.imgBtnLaver), WashActivity.class);
     }
 
     private void ecouteImgBtn (ImageButton btn, final Class classe){

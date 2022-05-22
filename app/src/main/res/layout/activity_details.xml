@@ -32,7 +32,7 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/btnRetourDeDetail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/retour" />
